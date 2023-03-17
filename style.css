@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+  background: hsl(221, 100%, 96%);
+  min-height: 100vh;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  min-height: 100vh;
+}
+.circle {
+  padding: 2rem;
+  max-width: 50%;
+  max-height: 10rem;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.summary {
+  width: 43%;
+  height: 68vh;
+  background: linear-gradient(
+    to bottom,
+    hsla(252, 100%, 67%, 1),
+    hsla(241, 81%, 54%, 1)
+  );
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.details {
+  height: 68vh;
+  width: 43%;
+  border-radius: 20px;
+  /* padding: 2rem 1.5rem; */
+  background: white;
+}
+#summary-title {
+  padding: 1.2rem;
+}
+.types {
+  font-size: 15px;
+  margin: 0.2rem 0.8rem;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+}
+.reaction {
+  background: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+  margin-bottom: 2.5rem;
+}
+
+button {
+  background: hsl(224, 30%, 27%);
+  /* background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%)); */
+  color: white;
+  padding: 0.9rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid hsl(224, 30%, 27%);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
+}
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border: 2px solid
+    linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+img {
+  margin-right: 0.5rem;
+}
+.score {
+  display: flex;
+  justify-content: end;
+  color: hsla(224, 30%, 27%, 0.8);
+}
+.bold {
+  color: black;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+.percentage {
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+.result-title,
+.of,
+p {
+  color: hsl(241, 100%, 89%);
+}
+p {
+  padding: 1rem 3rem;
+}
+.result-title {
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 571px) {
+  .container {
+    flex-direction: column;
+  }
+  .summary {
+    width: 65%;
+    height: 50vh;
+  }
+  .details {
+    width: 65%;
+    height: 58vh;
+  }
+  .circle {
+    padding: 1.5rem;
+    width: 40%;
+    height: 9rem;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .of {
+    font-size: 0.9rem;
+  }
+  .result-title {
+    margin: 1rem 0;
+  }
+  .types {
+    font-size: 15px;
+    margin: 0.4rem 0.8rem;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    /* margin-bottom: 0.5rem; */
+  }
+  .visual {
+    margin-bottom: 2rem;
+  }
+  .reaction {
+    margin-top: 0;
+  }
+  #summary-title {
+    padding: 1.5rem;
+  }
+  .great {
+    font-size: 22px;
+    padding-top: 1.5rem;
+  }
+  p {
+    font-size: 15px;
+    margin: 0;
+    padding: 0.7rem 3rem;
+  }
+}
+@media screen and (max-width: 492px) {
+  .circle {
+    max-width: 50%;
+    max-height: 8rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .circle {
+    max-width: 50%;
+    max-height: 7rem;
+  }
+  .percentage {
+    font-size: 2.5rem;
+  }
+  .of {
+    font-size: 0.7rem;
+  }
+  .reaction {
+    margin-top: 0;
+  }
+
+  .types {
+    margin: 0.5rem 0.4rem;
+  }
+  /* .visual {
+    margin-bottom: 1.2rem;
+  } */
+  .img {
+    margin-right: 0rem;
+  }
+  p {
+    padding: 0.7rem 0.8rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .circle {
+    height: 6rem;
+  }
+  p {
+    padding: 0.7rem 0.8rem;
+  }
+  .types {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 15px;
+  }
+  .types {
+    font-size: 0.8rem;
+    margin: 0.8rem;
+    padding: 0.5rem;
+  }
+  .reaction {
+    margin-top: 0;
+  }
+}
