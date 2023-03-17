@@ -49,6 +49,9 @@ body {
   border-radius: 20px;
   /* padding: 2rem 1.5rem; */
   background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #summary-title {
   padding: 1.2rem;
